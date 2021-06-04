@@ -1,39 +1,77 @@
-
-   body{
-background-color: rosybrown;
-font-weight: bold;
-
+*{   /*selector universal */
+    padding: 0;
+    margin: 0;
+     box-sizing:border-box; /*Ancho abarque padding y borde */
 }
 body{
-    margin: 0;
+    background-color: rosybrown;
+    font-weight: bold;
+    font-family:  'Helvetica';
+    
 }
-
-nav{
-    font-size: 18px;
-    font-family: sans-serif;
-    width: 100%;
-    height: 70px;
-    display: flex;
+.logo{
+    width: 120px;
+    float: left;
+    padding: 8px;
+}
+.menu{
+    width: 900px;
+    }
+header{
     background: #d3b3f2;
-    justify-content:space-between;
-    align-items: center;
-    padding: 0 5px 0 5px;
-   
+    width: 100%;
+    clear: both; /* no tener elementos de izquierza a derecha*/
+    display: table;/* los elementos flotantes hijos puedan */
 }
 
-
-.segundo_forma{
-    font-size: 30px;
-    font-family: Helvetica;
-    color:#a618a8;
-    text-decoration: none;
-    padding-left:  0px;
+nav{        /* mover la posición a la derecha derecha*/
+    float: right;   
+}
+nav ul li{   /* elemento padre */
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+    position: relative;
 }
 
-
-.primera_forma{
-    font-size: 30px;
-    color:#627af0;
+.designofmenu{  /* tambien puede ser nav ul li a estilo a los enlaces */
+    font-size: 30px;    
+    color:#584bc4;
     font-family: Franklin Gothic Medium;
     text-decoration: none;
+    font-weight: bold;    
 }
+.designofmenu::before{    /* linea de texto */
+    display: block;
+    width: 0%;
+    background: #444;
+    height: 7px;
+    top: 0;
+    position: absolute;   
+    content: '';
+    transition: 0.2s;
+}
+.designofmenu:hover::before{  /* hover= dispositivo señalador */    
+    width: 100%;    
+}
+
+ #Portada{
+    height: 70vh;
+    width: 100%;
+    background-image: url("../images/Diseño1.png");
+    background-position-x: center center;
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;    
+    text-align: center; 
+    align-items: center;
+    font-size: 25px; 
+
+}
+/*.portada{
+    height: 800px;
+    width: 1500px;
+
+} */
