@@ -6,29 +6,25 @@
 body{
     background-color: #bc8f8f;
     font-weight: bold;
-    font-family:  'Helvetica';
-    
+    font-family:  'Helvetica';    
 }
 .logo{
     width: 80px;
     float: left;
     padding: 8px;
 }
-
 #menu{
     width: 900px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-
-    }
+}
 header{
     background: #d3b3f2;
     width: 100%;
     clear: both; /* no tener elementos de izquierza a derecha*/
-    display: table;/* los elementos flotantes hijos puedan */
-    
+    display: table;/* los elementos flotantes hijos puedan */   
 }
  nav{         /* mover la posición a la derecha derecha */
     display: flex;
@@ -37,7 +33,7 @@ header{
     align-items: center;  
     height: 30px; 
 }   
-.tema{   
+nav ul li{   
     list-style: none; 
     margin-left: 75px;
     padding: 5px 0;
@@ -65,7 +61,7 @@ header{
     width: 100%;    
 }
  #Portada{
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-image: url("../images/Diseño1.png");
     background-position-x: center center;
