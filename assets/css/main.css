@@ -37,7 +37,7 @@ body{
     align-items: center;
 }
 header{
-    background: #d3b3f2;
+    background-color: #d3b3f2;
     width: 100%;
     clear: both; /* no tener elementos de izquierza a derecha*/
     display: table;/* los elementos flotantes hijos puedan */   
@@ -77,7 +77,7 @@ nav ul li{
     width: 100%;    
 }
  #Portada{
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     background-image: url("../images/Diseño1.png");
     background-position-x: center center;
@@ -99,6 +99,7 @@ nav ul li{
     position: relative;
     width: 200px;
     height: 215px;
+    align-items: center;
     background: #fff;
     margin: 0 auto;
     border-radius: 2px;
@@ -169,30 +170,102 @@ nav ul li{
     display: block;
     margin-top: 5px;
  } 
- @media screen and (max-width: 750px){
+ @media (max-width: 1281px) {
+    body{
+        background-color: #a8c5eb;
+    }
+    header{
+        background-color: #f0b3f2; 
+    }
+    .card{
+        box-shadow:0 4px 10px rgb(12, 97, 47);
+        background: #cff1da;
+    }
+  }
+
+ @media (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        background-color: #cba8eb;
+    }
+    header{
+    background-color: #d7e1f7; 
+    height: 58px;
+    }
+    .designofmenu{
+    font-size: 25px;    
+    color: #cfad3c;
+    font-family:Georgia;
+    font-weight: bold;
+    }
+    .logo{  
+        display: none;
+    }
+    .container{
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .card{
+        box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
+        
+    }
+    #Portada{
+        height: 50vh;
+    }
+    
+ }
+ @media (min-width: 768px) and (max-width: 1024px){
     header{
     background-color: #d3f5e0; 
+    height: 60px;
     }
     .designofmenu{
     font-size: 20px;    
-    color: #c0cf3c;
+    color: #cf5e3c;
     font-family: 'Lucida Sans';
     font-weight: bold;
     }
     .logo{  
         display: none;
     }
-    card{
+    .card{
         box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
     }
     
  }
- /* .Image-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr;
-    justify-items: stretch;
-    height: 500px;
-    align-items: center;
-}
-*/
+ @media (min-width: 481px) and (max-width: 767px)  {
+    body{
+        background-color: #cba8eb;
+    }
+    header{
+    background-color: #d7e1f7; 
+    height: 58px;
+    }
+    .designofmenu{
+    font-size: 25px;    
+    color: #cfad3c;
+    font-family:Georgia;
+    font-weight: bold;
+    }
+    .logo{  
+        display: none;
+    }
+    .container{
+        display:inline;
+        grid-template-columns: 200px 200px;
+        grid-row: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .card{
+        box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
+        
+    }
+    #Portada{
+        height: 50vh;
+    }
+    
+ }
+/*# sourceMappingURL=main.css.map */
