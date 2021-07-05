@@ -7,22 +7,7 @@ body{
     background-color: #bc8f8f;
     font-weight: bold;
     font-family:  'Helvetica';  
-    /*body{
-        margin: 0;
-        background-color: whitesmoke;
     
-     Ubicación de la imagen 
-        background-image: url(../images/fondo.jpg);
-     Para dejar la imagen de fondo centrada, vertical y horizontalmente 
-        background-position: center center;
-     Para que la imagen de fondo no se repita 
-        background-repeat: no-repeat;
-     La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido
-        background-attachment: fixed;
-    La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador
-        background-size: cover;
-    } */
-      
 }
 .logo{
     width: 80px;
@@ -32,8 +17,7 @@ body{
 #menu{
     width: 900px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-around;   
     align-items: center;
 }
 header{
@@ -42,7 +26,7 @@ header{
     clear: both; /* no tener elementos de izquierza a derecha*/
     display: table;/* los elementos flotantes hijos puedan */   
 }
- nav{         /* mover la posición a la derecha derecha */
+nav{         /* mover la posición a la derecha derecha */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -90,7 +74,6 @@ nav ul li{
     font-size: 25px; 
 }
 .container{
-    padding: 0;
     display: flex;
     justify-content: space-around;
    
@@ -132,7 +115,7 @@ nav ul li{
     left: 10px;
     bottom: 10px;
     right: 10px;
-    background: #222;
+    background: rgb(255, 255, 255);
     transition: 0.5s;
     z-index: 1;
 }
@@ -156,8 +139,6 @@ nav ul li{
     text-align: center;
 }
 .card .details h2{
-    margin: 0;
-    padding: 0;
     font-weight: 600;
     font-size: 20px;
     color: #777;
@@ -184,6 +165,24 @@ nav ul li{
   }
 
  @media (min-width: 1025px) and (max-width: 1280px) {
+    header{
+        background-color: #d3f5e0; 
+        height: 60px;
+        }
+        .designofmenu{
+        font-size: 30px;    
+        color: #cf5e3c;
+        font-family: 'Lucida Sans';
+        font-weight: bold;
+        }        
+        .card{
+            box-shadow:0 2px 10px rgba(32, 189, 115, 0.89);
+            background: #cff1da;
+        }
+        
+     }
+
+ @media (min-width: 801px) and (max-width: 1024px) {
     body{
         background-color: #cba8eb;
     }
@@ -196,9 +195,6 @@ nav ul li{
     color: #cfad3c;
     font-family:Georgia;
     font-weight: bold;
-    }
-    .logo{  
-        display: none;
     }
     .container{
         display:grid;
@@ -208,44 +204,58 @@ nav ul li{
         grid-row-gap: 15px;
     }
     .card{
-        box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
+        box-shadow:0 2px 10px rgba(245, 148, 135, 0.911);
+        background: #f1decf;
         
     }
     #Portada{
         height: 50vh;
     }
     
- }
- @media (min-width: 768px) and (max-width: 1024px){
-    header{
-    background-color: #d3f5e0; 
-    height: 60px;
     }
-    .designofmenu{
-    font-size: 20px;    
-    color: #cf5e3c;
-    font-family: 'Lucida Sans';
-    font-weight: bold;
-    }
-    .logo{  
-        display: none;
-    }
-    .card{
-        box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
-    }
-    
- }
- @media (min-width: 481px) and (max-width: 767px)  {
+ 
+ @media (min-width: 481px) and (max-width: 767px) {
     body{
-        background-color: #cba8eb;
+        background-color: #eba8be;
     }
     header{
-    background-color: #d7e1f7; 
-    height: 58px;
+    background-color: #f7d7d7; 
+    height: 70px;
     }
     .designofmenu{
     font-size: 25px;    
-    color: #cfad3c;
+    color: #cf3cc8;
+    font-family:Georgia;
+    font-weight: bold;
+    }
+    .container{
+        display:block;
+        grid-row: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .card{
+        box-shadow:0 2px 10px rgba(245, 148, 135, 0.911);
+        background: #f1decf;
+        
+    }
+    #Portada{
+        height: 50vh;
+    }
+    
+    }
+ @media (max-width: 480px ) {
+     
+    body{
+        background-color: #ebdfa8;
+    }
+    header{
+    background-color: #d7f7f0; 
+    height: 70px;
+    }
+    .designofmenu{
+    font-size: 25px;    
+    color: #a53ccf;
     font-family:Georgia;
     font-weight: bold;
     }
@@ -253,14 +263,11 @@ nav ul li{
         display: none;
     }
     .container{
-        display:inline;
-        grid-template-columns: 200px 200px;
-        grid-row: auto auto;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
+        display:block;
     }
     .card{
-        box-shadow:0 2px 10px rgba(177, 135, 245, 0.89);
+        box-shadow:0 2px 10px rgba(190, 52, 98, 0.89);
+        background: #f1cfdd;
         
     }
     #Portada{
@@ -268,4 +275,4 @@ nav ul li{
     }
     
  }
-/*# sourceMappingURL=main.css.map */
+ 

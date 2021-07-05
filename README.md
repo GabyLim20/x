@@ -1,0 +1,1 @@
+Primer boceto de nuestra página web, usamos sass en algunos apartados junto con css auxiliando con Flexbox y grid

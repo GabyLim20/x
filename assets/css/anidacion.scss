@@ -1,0 +1,38 @@
+.Column{
+    background: #b8abf5;
+    color: $w-text;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px; 
+    .text{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: 6px solid #449663;
+        padding: $md;
+         img{
+            width: 20px;
+        }
+        h1{
+            font-size: $lg;
+            margin: 0 0 10px;
+        }
+        p{
+            font-size: $lg;        
+        }
+        p:hover{
+            color: red;
+        }
+    }
+
+}
+.Animation .container{
+    display: flex;
+    width:100%;
+	height:100%;
+}
+

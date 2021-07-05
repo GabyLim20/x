@@ -1,0 +1,173 @@
+/*Cascada y herencia */
+/*Modularizacion */
+/*importar */
+.container {
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  background: #b8abf5;
+}
+
+.text {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.text h2 {
+  color: white;
+  font-size: 25px;
+}
+.text h2:hover {
+  color: red;
+  font-size: 30px;
+}
+.text hr {
+  border: solid 2px grey;
+  width: 100%;
+}
+.text p {
+  color: white;
+  font-size: 20px;
+}
+.text div a {
+  margin-right: 15px;
+  color: blue;
+  font-size: 25px;
+}
+.text div a:hover {
+  margin-right: 15px;
+  color: yellow;
+  font-size: 25px;
+}
+
+.Column {
+  background: #b8abf5;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+.Column .text {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 6px solid #449663;
+  padding: 30px;
+}
+.Column .text img {
+  width: 20px;
+}
+.Column .text h1 {
+  font-size: 45px;
+  margin: 0 0 10px;
+}
+.Column .text p {
+  font-size: 45px;
+}
+.Column .text p:hover {
+  color: red;
+}
+
+.Animation .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 320px) {
+  .text {
+    height: 150px;
+    width: 200px;
+    background-color: pink;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
+/*@media (min-width: 768px) {  
+    .container{
+        @include container(300px, 250px, blue,center);
+        border-radius: 20px;
+    }
+  }
+
+
+@media (min-width: 1025px) {
+
+    .container{
+        @include container(250px, 300px, green,flex-end); 
+    }
+
+  }*/
+nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin-left: 75px;
+  padding: 5px 0;
+  float: left;
+  position: relative;
+}
+nav li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 5px 0;
+  float: left;
+  position: relative;
+}
+
+#menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.designofmenu {
+  font-size: 30px;
+  color: #584bc4;
+  font-family: Franklin Gothic Medium;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.designofmenu::before {
+  display: block;
+  width: 0%;
+  background: #444;
+  height: 7px;
+  top: 0;
+  position: absolute;
+  content: "";
+  transition: 0.2s;
+}
+
+.designofmenu:hover::before {
+  width: 100%;
+}
+
+.logo {
+  width: 80px;
+  float: left;
+  padding: 8px;
+}
+
+header {
+  background-color: #f388cf;
+  width: 100%;
+  clear: both;
+  display: table;
+}
+
+/*# sourceMappingURL=WhatIs.css.map */

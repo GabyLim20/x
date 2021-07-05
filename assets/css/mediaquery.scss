@@ -1,0 +1,24 @@
+ @media (min-width: 320px) {
+  
+    .text{
+    @include container(150px, 200px, pink, left);  
+    }
+
+ }
+
+
+/*@media (min-width: 768px) {  
+    .container{
+        @include container(300px, 250px, blue,center);
+        border-radius: 20px;
+    }
+  }
+
+
+@media (min-width: 1025px) {
+  
+    .container{
+        @include container(250px, 300px, green,flex-end); 
+    }
+    
+  }*/

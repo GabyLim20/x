@@ -1,0 +1,68 @@
+
+@mixin container($height, $width, $bg-color, $justify-content){
+    height: $height;
+    width: $width;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center; 
+
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    background: #b8abf5;
+   
+}
+
+.text{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px; 
+    
+
+    h2{
+        color:white;
+        font-size: 25px;
+    }
+
+    h2:hover{
+        color: red;
+        font-size: 30px;
+    }
+
+    hr{
+        border: solid 2px grey; 
+        width: 100%;
+    }
+
+    p{
+        color: white;
+        font-size: 20px;
+    }
+
+
+    div{
+ 
+      
+        a{  
+            margin-right: 15px;
+            color: blue;
+            font-size: 25px;
+        }
+
+        a:hover{  
+            margin-right: 15px;
+            color: yellow;
+            font-size: 25px;
+        }
+    }
+
+    
+
+
+}
