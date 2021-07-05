@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Int1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='assets\css\WhatIs.css'>
+    <link rel='stylesheet' href='assets\css\sesion.css'>
 </head>
 <body>
     <header>  <!-- Encabezado -->
@@ -16,27 +16,25 @@
                     <li ><a  class="designofmenu" href="WhatIs.html">¿Qué es?</a></li> <!--elemento de lista-->   
                     <li ><a class="designofmenu"  href="juego.html">Juegos</a></li>
                     <li  ><a class="designofmenu" href="#">Nosotros</a></li>
-                    <li ><a class="designofmenu" href="#">Sesión</a></li>
+                    <li ><a class="designofmenu" href="sesion.html">Sesión</a></li>
                 </ul>
             </nav>         
              
         </div>
      </header>
-    <div class="slider">
-        <ul>
-            <li>
-                <img src="assets\images\primer.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets\images\segund.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets/images/terc.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets/images/cuart.jpg" alt="">
-            </li>
-        </ul>
-    </div>
+    <div class="login-box">
+        <img src="assets\images\logo.png" class="avatar" alt="Avatar Image">
+        <h1>Login Here</h1>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter Username">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter Password">
+          <input type="submit" value="Log In">
+          <a href="#">Lost your Password?</a><br>
+          <a href="#">Don't have An account?</a>
+        </form>
+      </div>
+    
 </body>
 </html>

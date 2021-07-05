@@ -6,19 +6,37 @@
 
  }
 
+ /*@media (max-width: 1281px) {
+  header{
+      background-color: #f0b3f2; 
+  }
+}
 
-/*@media (min-width: 768px) {  
-    .container{
-        @include container(300px, 250px, blue,center);
-        border-radius: 20px;
-    }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header{
+      background-color: #d3f5e0; 
+      height: 60px;
+      }
+   }
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  header{
+  background-color: #d7e1f7; 
+  height: 58px;
+  }
   }
 
-
-@media (min-width: 1025px) {
-  
-    .container{
-        @include container(250px, 300px, green,flex-end); 
-    }
-    
-  }*/
+@media (min-width: 481px) and (max-width: 767px) {
+  header{
+  background-color: #f7d7d7; 
+  height: 70px;
+  }
+   
+  }
+@media (max-width: 480px ) {
+  header{
+  background-color: #d7f7f0; 
+  height: 70px;
+  }  
+}
+*/
