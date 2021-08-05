@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Int1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='assets\css\WhatIs.css'>
+    <link rel='stylesheet' href='assets\css\paint.css'>
 </head>
 <body>
     <header>  <!-- Encabezado -->
@@ -16,28 +16,15 @@
                     <li ><a  class="designofmenu" href="WhatIs.html">¿Qué es?</a></li> <!--elemento de lista-->   
                     <li ><a class="designofmenu"  href="juego.html">Juegos</a></li>
                     <li  ><a class="designofmenu" href="#">Nosotros</a></li>
-                    <li ><a class="designofmenu" href="#">Sesión</a></li>
+                    <li ><a class="designofmenu" href="sesion.html">Sesión</a></li>
                 </ul>
             </nav>         
              
         </div>
-     </header>
-    <div class="slider">
-        <ul>
-            <li>
-                <img src="assets\images\carrus1.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets\images\segund.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets/images/terc.jpg" alt="">
-            </li>
-            <li>
-                <img src="assets/images/cuart.jpg" alt="">
-            </li>
-        </ul>
-    </div>
-    <script src="assets\js\Whatis.js"></script>
+     </header>    
+<canvas id= "canvas" width="1000" height="500"></canvas><br>
+<input type="color" id= "color" oninput="defcolor(this.value);">
+<input type="range" id="grosor" oninput="defgrosor(this.value);"min="1" max="10" value="1"> <!-- html 5 grosor -->
+<script src="assets\js\paint.js"></script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+#canvas{
+    border:1px solid black;
+    margin-left: 15%;
+}
+body{
+    background-color: #e4c0c0;
+    font-weight: bold;
+    font-family:  'Helvetica'; 
+    padding: 0;
+    margin: 0; 
+    
+}
+.logo{
+    width: 80px;
+    float: left;
+    padding: 8px;
+}
+#menu{
+    width: 900px;
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+}
+header{
+    background-color: #d3b3f2;
+    width: 100%;
+    clear: both; /* no tener elementos de izquierza a derecha*/
+    display: table;/* los elementos flotantes hijos puedan */   
+}
+nav{         /* mover la posición a la derecha derecha */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;  
+    height: 30px; 
+}   
+nav ul li{   
+    list-style: none; 
+    margin-left: 75px;
+    padding: 5px 0;
+    float: left; 
+    position: relative;     
+}
+.designofmenu{  /* tambien puede ser nav ul li a estilo a los enlaces */
+    font-size: 30px;    
+    color:#584bc4;
+    font-family: Franklin Gothic Medium;
+    text-decoration: none;
+    font-weight: bold;    
+}
+.designofmenu::before{    /* linea de texto */
+    display: block;
+    width: 0%;
+    background: #444;
+    height: 7px;
+    top: 0;
+    position: absolute;   
+    content: '';
+    transition: 0.2s;
+}
+.designofmenu:hover::before{  /* hover= dispositivo señalador */    
+    width: 100%;    
+}
