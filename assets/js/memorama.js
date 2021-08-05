@@ -24,16 +24,7 @@ class Memorama{
        this.orderForThisRound.sort( () => Math.random() - 0.5 );
       
     }
-    setImagesInCards() {
-        for (const key in this.cards) {            
-            const card = this.cards[key];/* Indice arreglo */
-            const image = this.orderForThisRound[key];
-            const imgLabel = card.children[1].children[0];/*Acceder al hijo */
-            card.dataset.image = image;
-            imgLabel.src = `assets/images/${image}.jpg`;
-        }
-    }
-}    
+}   
 
 document.addEventListener("DOMContentLoaded", () => {
 

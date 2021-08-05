@@ -1,6 +1,6 @@
 /*global guardar variables globales*/ 
 var canvas=document.getElementById('canvas');/*capturar el objeto*/ 
-var ctx=canvas.getContext('2d')/*maniular el objeto other variable*/ 
+var ctx=canvas.getContext('2d')/*manipular el objeto other variable*/ 
 var rect=canvas.getBoundingClientRect();/*obtener pos */ 
 var x=0, y=0, dibujando=false, color="black",grosor=1;
 /*crear funcion oninput html*/ 
@@ -35,10 +35,10 @@ canvas.addEventListener('mouseup',function(dclick){
 function dibujar(x1,y1,x2,y2){
     /*atributos*/
     ctx.beginPath();
-    ctx.strokeStyle=color;
+    ctx.strokeStyle=color; /*Devolver color */
     ctx.lineWidth=grosor;
     ctx.moveTo(x1,y1);
     ctx.lineTo(x2,y2);
-    ctx.stroke();
+    ctx.stroke();/*Linea de recorrido */
     ctx.closePath();
 }
